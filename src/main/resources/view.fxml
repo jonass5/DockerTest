@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="DockerExample.ViewController">
+   <children>
+      <Button fx:id="btnUpdate" layoutX="21.0" layoutY="308.0" mnemonicParsing="false" prefHeight="64.0"
+              prefWidth="112.0" text="Update">
+         <font>
+            <Font size="20.0"/>
+         </font>
+      </Button>
+      <Button fx:id="btnRemove" layoutX="167.0" layoutY="308.0" mnemonicParsing="false" prefHeight="64.0"
+              prefWidth="112.0" text="Remove">
+         <font>
+            <Font size="20.0"/>
+         </font>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="308.0" layoutY="308.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="112.0"
+              text="Add">
+         <font>
+            <Font size="20.0"/>
+         </font>
+      </Button>
+      <Button fx:id="btnGet" layoutX="449.0" layoutY="308.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="112.0"
+              text="Get">
+         <font>
+            <Font size="20.0"/>
+         </font>
+      </Button>
+      <TextField fx:id="txtid" layoutX="205.0" layoutY="41.0" prefHeight="25.0" prefWidth="206.0"/>
+      <TextField fx:id="txtage" layoutX="205.0" layoutY="187.0" prefHeight="25.0" prefWidth="206.0"/>
+      <TextField fx:id="txtlname" layoutX="205.0" layoutY="138.0" prefHeight="25.0" prefWidth="206.0"/>
+      <TextField fx:id="txtfname" layoutX="205.0" layoutY="87.0" prefHeight="25.0" prefWidth="206.0"/>
+      <Label layoutX="41.0" layoutY="40.0" prefHeight="17.0" prefWidth="92.0" text="ID">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="186.0" prefHeight="17.0" prefWidth="92.0" text="Age">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="137.0" prefHeight="27.0" prefWidth="122.0" text="Lastname">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="86.0" prefHeight="17.0" prefWidth="92.0" text="Firstname">
+         <font>
+            <Font size="18.0"/>
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

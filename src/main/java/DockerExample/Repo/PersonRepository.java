@@ -60,7 +60,7 @@ public class PersonRepository {
         entityManager.getTransaction().commit();
     }
 
-    public void updatePerson(int id, String newFName, String newLName) {
+    public void updatePerson(int id, String newFName, String newLName, int age) {
         entityManager.getTransaction().begin();
 
         Person person = entityManager.find(Person.class, id);
@@ -69,6 +69,7 @@ public class PersonRepository {
 
         person.setLastname(newLName);
         person.setFirstname(newFName);
+        person.setAge(age);
 
         entityManager.merge(person);
 
