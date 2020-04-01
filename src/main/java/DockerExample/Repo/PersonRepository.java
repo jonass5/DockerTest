@@ -1,8 +1,6 @@
 package DockerExample.Repo;
 
-import DockerExample.Entity.Department;
 import DockerExample.Entity.Person;
-import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,16 +11,14 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class PersonRepoAlt {
+public class PersonRepository {
 
     @PersistenceContext
     EntityManager entityManager = Persistence.createEntityManagerFactory("person_catalog").createEntityManager();
-    @PersistenceContext
-    EntityManager depEntityManager = Persistence.createEntityManagerFactory("dep_catalog").createEntityManager();
 
-    public Session getSession() {
-        return entityManager.unwrap(Session.class);
-    }
+//    public Session getSession() {
+//        return entityManager.unwrap(Session.class);
+//    }
 
     public void add(String firstname, String lastname, int age) {
         entityManager.getTransaction().begin();
